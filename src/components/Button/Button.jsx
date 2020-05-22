@@ -14,6 +14,7 @@ const Button = (props) => {
           ? styles.buttonWrapper
           : cx(styles.buttonWrapper, styles.operator)
       }
+      onClick={() => props.handleClick(props.children)}
     >
       {props.children}
     </div>
